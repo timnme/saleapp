@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.sample.saleapp"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.core:core-ktx:$ktx_version"
+
+    // Google
+    // Material
+    implementation "com.google.android.material:material:$material_version"
+
+    // Android
+    // AppCompat
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    // Constraint Layout
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayout_version"
+    // Recycler View
+    implementation "androidx.recyclerview:recyclerview:$recyclerView_version"
+    // View Pager 2
+    implementation "androidx.viewpager2:viewpager2:$viewPager2_version"
+
+    // Dependency Injection
+    // Dagger
+    implementation "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+
+    // Rx
+    // RxJava
+    implementation "io.reactivex.rxjava2:rxjava:$rxJava_version"
+    // RxAndroid
+    implementation "io.reactivex.rxjava2:rxandroid:$rxAndroid_version"
+
+    // Database
+    // Room
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-rxjava2:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    // Testing
+    // JUnit
+    testImplementation "junit:junit:$junit_version"
+    // Runner
+    androidTestImplementation "androidx.test:runner:$runner_version"
+}

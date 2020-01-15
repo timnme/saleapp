@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Sale App</string>
+    <string name="title_manage">Managing products</string>
+    <string name="title_store_front">Store-Front</string>
+    <string name="title_back_end">Back-End</string>
+    <string name="title_purchase">Purchase</string>
+    <string name="title_export">Export</string>
+    <string name="title_import">Import</string>
+    <string name="title_cancel">Cancel</string>
+    <string name="title_save">Save</string>
+    <string name="title_name">Name</string>
+    <string name="title_price">Price</string>
+    <string name="title_quantity">Quantity</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_price">Price</string>
+    <string name="hint_quantity">Quantity</string>
+    <string name="msg_product_being_updated">Product info is updated</string>
+    <string name="text_product_price">%s rub.</string>
+    <string name="text_product_quantity">%s items</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/store_front"
+        android:icon="@drawable/ic_local_grocery_store"
+        android:title="@string/title_store_front" />
+
+    <item
+        android:id="@+id/back_end"
+        android:icon="@drawable/ic_mode_edit"
+        android:title="@string/title_back_end" />
+
+</menu>
